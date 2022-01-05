@@ -1,0 +1,9 @@
+.card_wrapper {
+  background-color: cornflowerblue;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px;
+  margin: 0.3rem;
+}

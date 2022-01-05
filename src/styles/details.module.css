@@ -1,0 +1,49 @@
+.details_style {
+  width: 500px;
+  height: fit-content;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  z-index: 10;
+  border-radius: 0.2rem;
+}
+
+.button_style {
+  margin: 0.2rem;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background-color: white;
+}
+
+.characters_wrapper {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ullist_style {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 160px;
+  margin-bottom: 1rem;
+}
+
+.listitem_style {
+  width: 50%;
+  padding: 0.2rem;
+  list-style-type: none;
+}
