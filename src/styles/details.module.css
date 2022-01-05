@@ -25,6 +25,7 @@
   right: 5px;
   top: 5px;
   background-color: white;
+  cursor: pointer;
 }
 
 .characters_wrapper {

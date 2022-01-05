@@ -24,30 +24,32 @@ const Movies = () => {
 
   return (
     <div className={styles.wrapper}>
-      <Loading loading={loading} color={"white"} />
-      {movies.map((movie) => (
-        <Card
-          onClick={() => {
-            setCharacters(movie.characters);
-            setIsShowing(true);
-            setTitle(movie.title);
-          }}
-          key={movie.episode_id}
-          title={movie.title}
-          release_date={movie.release_date}
-          characters={movie.characters}
-        />
-      ))}
+      <div className={styles.wrapper_inner}>
+        <Loading loading={loading} color={"white"} />
+        {movies.map((movie) => (
+          <Card
+            onClick={() => {
+              setCharacters(movie.characters);
+              setIsShowing(true);
+              setTitle(movie.title);
+            }}
+            key={movie.episode_id}
+            title={movie.title}
+            release_date={movie.release_date}
+            characters={movie.characters}
+          />
+        ))}
 
-      <Details
-        characters={characters}
-        title={title}
-        showing={isShowing}
-        stopShowing={() => {
-          setCharacters([]);
-          setIsShowing(false);
-        }}
-      />
+        <Details
+          characters={characters}
+          title={title}
+          showing={isShowing}
+          stopShowing={() => {
+            setCharacters([]);
+            setIsShowing(false);
+          }}
+        />
+      </div>
     </div>
   );
 };

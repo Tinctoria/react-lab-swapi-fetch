@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 const Details = (props) => {
   const { showing, stopShowing, characters, title } = props;
   //  Details component shown when a card is clicked.
-  console.log(title);
 
   //   Characters består av en array med urler.
 
@@ -28,7 +27,7 @@ const Details = (props) => {
 
   //Måste sortera arrayen efter namn för att få dem i boksavsordning.
 
-  const sortedArray = movieCharacters.sort((a, b) => {
+  movieCharacters.sort((a, b) => {
     if (a.name < b.name) {
       return -1;
     }

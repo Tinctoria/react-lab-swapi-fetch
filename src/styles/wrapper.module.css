@@ -2,5 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.wrapper_inner {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
 }
