@@ -2,12 +2,18 @@ import "../styles/loading.module.css";
 import styles from "../styles/loading.module.css";
 
 const Loading = (props) => {
-  const { loading } = props;
+  const { loading, color } = props;
   if (!loading) return null;
+
+  console.log(color);
+
+  const style = {
+    color: color,
+  };
 
   return (
     <div className={styles.loading_style}>
-      <p>Please wait while we're loading data</p>
+      <p style={style}>Please wait while we're loading data</p>
       <div className={styles.loader}>
         <div className={styles.ls_particles + " " + styles.ls_part_1}></div>
         <div className={styles.ls_particles + " " + styles.ls_part_2}></div>

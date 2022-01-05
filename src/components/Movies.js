@@ -22,7 +22,7 @@ const Movies = () => {
 
   return (
     <div className={styles.wrapper}>
-      <Loading loading={loading} />
+      <Loading loading={loading} color={"white"} />
       {movies.map((movie) => (
         <Card
           onClick={() => {

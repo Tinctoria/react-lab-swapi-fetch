@@ -14,6 +14,7 @@ const Details = (props) => {
   //Sen måste vi sätta den nya arrayen till movieCharecters med Promise.all
 
   useEffect(() => {
+    setLoading(true);
     const characterNames = characters.map((character) =>
       fetch(character).then((res) => res.json())
     );
@@ -44,7 +45,7 @@ const Details = (props) => {
       </button>
       <h3 style={{ margin: "1rem" }}>Characters in movie</h3>
       <div className={styles.characters_wrapper}>
-        <Loading loading={loading} />
+        <Loading loading={loading} color={"black"} />
         <ul className={styles.ullist_style}>
           {movieCharacters.map((character) => (
             <li className={styles.listitem_style} key={character.name}>
