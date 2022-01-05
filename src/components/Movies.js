@@ -13,6 +13,8 @@ const Movies = () => {
 
   const [characters, setCharacters] = useState([]);
 
+  const [title, setTitle] = useState("");
+
   useEffect(() => {
     fetch("https://swapi.dev/api/films")
       .then((res) => res.json())
@@ -28,6 +30,7 @@ const Movies = () => {
           onClick={() => {
             setCharacters(movie.characters);
             setIsShowing(true);
+            setTitle(movie.title);
           }}
           key={movie.episode_id}
           title={movie.title}
@@ -38,6 +41,7 @@ const Movies = () => {
 
       <Details
         characters={characters}
+        title={title}
         showing={isShowing}
         stopShowing={() => {
           setCharacters([]);

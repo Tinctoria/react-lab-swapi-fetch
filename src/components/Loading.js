@@ -5,11 +5,11 @@ const Loading = (props) => {
   const { loading, color } = props;
   if (!loading) return null;
 
-  console.log(color);
-
   const style = {
     color: color,
   };
+
+  //Anpassar en star wars loading animation till react.
 
   return (
     <div className={styles.loading_style}>

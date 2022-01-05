@@ -1,3 +1,5 @@
+/* Style for card */
+
 .card_wrapper {
   background-color: cornflowerblue;
   padding: 1rem;
@@ -6,4 +8,5 @@
   align-items: center;
   width: 240px;
   margin: 0.3rem;
+  border-radius: 5px;
 }

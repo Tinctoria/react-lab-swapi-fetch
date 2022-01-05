@@ -3,7 +3,9 @@ import Loading from "../components/Loading";
 import { useState, useEffect } from "react";
 
 const Details = (props) => {
-  const { showing, stopShowing, characters } = props;
+  const { showing, stopShowing, characters, title } = props;
+  //  Details component shown when a card is clicked.
+  console.log(title);
 
   //   Characters består av en array med urler.
 
@@ -43,7 +45,7 @@ const Details = (props) => {
       <button className={styles.button_style} onClick={stopShowing}>
         X
       </button>
-      <h3 style={{ margin: "1rem" }}>Characters in movie</h3>
+      <h3 style={{ margin: "1rem" }}>Characters in {title}</h3>
       <div className={styles.characters_wrapper}>
         <Loading loading={loading} color={"black"} />
         <ul className={styles.ullist_style}>

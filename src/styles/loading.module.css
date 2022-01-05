@@ -1,4 +1,7 @@
+/* Styles for loading */
+
 .loading_style {
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,6 +12,8 @@
   transform: translate(-50%, -50%);
   z-index: 10;
 }
+
+/* style and animation adapted for react, original from https://www.sliderrevolution.com/resources/css-loaders/ */
 
 .loader {
   width: 80px;

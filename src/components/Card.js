@@ -1,5 +1,7 @@
 import styles from "../styles/card.module.css";
 
+// Card that shows title and releasedate of movie, passed via props.
+
 const Card = (props) => {
   const { title, release_date } = props;
 
